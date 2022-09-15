@@ -1,0 +1,43 @@
+$ django-admin startproject <project-name> 
+- Used for creating a django project
+$ python manage.py runserver 
+- starts the server on localhost:8000
+
+├── db.sqlite3
+├── manage.py
+├── mysite
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── settings.cpython-310.pyc
+│   │   ├── urls.cpython-310.pyc
+│   │   └── wsgi.cpython-310.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+
+setup/ is your top-level project folder.
+setup/setup/ is your lower-level folder that represents your management app.
+manage.py is a Python file that serves as the command center of your project. It does 
+the same as the django-admin command-line utility.
+
+Projects vs apps:
+
+An app is a web application that does something – e.g., a blog system, a database of public 
+records or a small poll app. A project is a collection of configuration and apps for a 
+particular website. A project can contain multiple apps. An app can be in multiple projects
+
+$ python manage.py startapp polls
+
+└── polls
+    ├── admin.py
+    ├── apps.py
+    ├── __init__.py
+    ├── migrations
+    │   └── __init__.py
+    ├── models.py
+    ├── tests.py
+    └── views.py
+
+This directory structure will house the poll application.
